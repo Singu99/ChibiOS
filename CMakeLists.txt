@@ -108,7 +108,7 @@ set(CHIBIOS_HAL_OSAL_SRC
     ${CHIBIOS_DIR}/os/hal/src/hal_uart.c 
     ${CHIBIOS_DIR}/os/hal/src/hal_usb.c 
     ${CHIBIOS_DIR}/os/hal/src/hal_wdg.c 
-    ${CHIBIOS_DIR}/os/hal/src/hal_wspi.c
+    # ${CHIBIOS_DIR}/os/hal/src/hal_wspi.c
 
     ## Platform ##
     ${CHIBIOS_DIR}/os/hal/ports/common/ARMCMx/nvic.c 
@@ -127,12 +127,12 @@ set(CHIBIOS_HAL_OSAL_SRC
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/I2Cv3/hal_i2c_lld.c
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/MACv2/hal_mac_lld.c
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/MDMAv1/stm32_mdma.c
-    ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/OCTOSPIv2/hal_wspi_lld.c
+    # ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/OCTOSPIv2/hal_wspi_lld.c
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/SDMMCv2/hal_sdc_lld.c
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/SPIv3/hal_spi_v2_lld.c
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/RNGv1/hal_trng_lld.c
-    ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c
+    # ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c
     ${CHIBIOS_DIR}/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c
