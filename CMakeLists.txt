@@ -146,6 +146,12 @@ set(CHIBIOS_HAL_OSAL_SRC
     ## OSAL ##
     ${CHIBIOS_DIR}/os/hal/osal/rt-nil/osal.c
 
+    ## LIB ##
+    ${CHIBIOS_DIR}/os/hal/lib/streams/nullstreams.c
+    ${CHIBIOS_DIR}/os/hal/lib/streams/memstreams.c
+    ${CHIBIOS_DIR}/os/hal/lib/streams/chscanf.c
+    ${CHIBIOS_DIR}/os/hal/lib/streams/chprintf.c
+    ${CHIBIOS_DIR}/os/hal/lib/streams/bufstreams.c
 )
 
 set(CHIBIOS_HAL_OSAL_INC
@@ -182,6 +188,9 @@ set(CHIBIOS_HAL_OSAL_INC
 
     ## OSAL ##
     ${CHIBIOS_DIR}/os/hal/osal/rt-nil
+
+    ## LIB ##
+    ${CHIBIOS_DIR}/os/hal/lib/streams
 )
 
 #### OSLIB ####
@@ -255,7 +264,7 @@ target_compile_options(ChibiOS PRIVATE
         -Wuseless-cast
         -Wsuggest-override
         -Werror>
-    $<$<CONFIG:Debug>:-Og -g3 -ggdb>
+    $<$<CONFIG:Debug>:-O0 -g3 -ggdb>
     $<$<CONFIG:Release>:-O3 -g0>)       # Maximum optimization on realease
 
 target_link_options(ChibiOS PRIVATE
